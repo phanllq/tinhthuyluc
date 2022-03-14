@@ -190,7 +190,9 @@ int main()
 						cout<<"Luu luong xa ung voi muc nuoc truoc lu tinh duoc : "<<qo_max<<endl;
 						break;	
 					}
-					case 3: {				
+					case 3: {			
+						cout<<"\n Ket qua tinh : ";
+						cout<<tinhmax(B,Zng_tran+10)<<" ";	
 						break;	
 					}
 					case 4: {				
@@ -231,9 +233,27 @@ int main()
 						break;	
 					}
 					case 5: {				
+						cout<<"\n Thong bao cho nguoi dung tan suat thiet ke cua cong trinh";
+						cout<<"\n Nhap vao cap cong trinh :";
+						int cap_CT;
+						cin>>cap_CT;
+						if (cap_CT<1)
+							cout<<" Tan suat thiet ke la 0,1%\n Tan suat kiem tra la 0.02%\n";
+						else if (cap_CT==1)
+							cout<<" Tan suat thiet ke la 0,5%\n Tan suat kiem tra la 0,1%\n";
+						else if (cap_CT==2)
+							cout<<" Tan suat thiet ke la 1%\n Tan suat kiem tra la 2%\n";
+						else if (cap_CT==3)
+							cout<<" Tan suat thiet ke la 1,5%\n Tan suat kiem tra la 0.5%\n";
+						else
+							cout<<" Tan suat thiet ke la 2%\n Tan suat kiem tra la 1%\n";
 						break;	
 					}
 					case 6: {				
+						double m_moi,epsilon_moi;
+						cout<<"\n Cap nhat bang tra hoac so lieu moi";
+						cout<<"\n Nhap vao he so luu luong moi : ";cin>>m_moi;
+						cout<<" Nhap vao he so co hep moi : ";cin>>epsilon_moi;
 						break;	
 					}
 					default: 
